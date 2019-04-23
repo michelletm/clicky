@@ -5,14 +5,14 @@ const ImgBtn = (props) => (
 
    <div 
       className={styles.whatever} 
-      style={{backgroundImage: `url(${props.imgurl})`,
-      backgroundSize: "contain"}}
-      onClick={props.clickHandler}
-   >
-   </div>
+      onClick={props.onClick}
+      style={
+         {
+            backgroundImage: `url(${props.imgurl})`,
+            backgroundSize: "contain", margin: "40px"
+         }
+      }
+   />
 )
-
-
-
 
 export default ImgBtn;
