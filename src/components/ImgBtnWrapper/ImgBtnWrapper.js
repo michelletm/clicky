@@ -1,15 +1,15 @@
 import React from "react";
 import ImgBtn from "../ImgBtn/ImgBtn"
-import diamond from "../../diamond.png"
-import blue from "../../blue.png"
-import multi from "../../multi.png"
-import rainbow from "../../rainbow.png"
-import green from "../../green.jpg"
-import garnet from "../../garnet.jpg"
-import topaz from "../../topaz.png"
-import kiss from "../../kiss.png"
-import sapphire from "../../sapphire.png"
-import oval from "../../oval.png"
+import diamond from "../../images/diamond.png"
+import blue from "../../images/blue.png"
+import multi from "../../images/multi.png"
+import rainbow from "../../images/rainbow.png"
+import green from "../../images/green.jpg"
+import garnet from "../../images/garnet.jpg"
+import topaz from "../../images/topaz.png"
+import kiss from "../../images/kiss.png"
+import sapphire from "../../images/sapphire.png"
+import oval from "../../images/oval.png"
 
 
 const imgUrls = [
