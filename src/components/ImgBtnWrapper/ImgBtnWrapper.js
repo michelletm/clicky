@@ -1,19 +1,28 @@
 import React from "react";
 import ImgBtn from "../ImgBtn/ImgBtn"
 import diamond from "../../diamond.png"
-import redheart from "../../readheart.png"
+import blue from "../../blue.png"
+import multi from "../../multi.png"
+import rainbow from "../../rainbow.png"
+import green from "../../green.jpg"
+import garnet from "../../garnet.jpg"
+import topaz from "../../topaz.png"
+import kiss from "../../kiss.png"
+import sapphire from "../../sapphire.png"
+import oval from "../../oval.png"
+
 
 const imgUrls = [
    {id: "a", url: diamond},
-   {id: "b", url: diamond},
-   {id: "c", url: redheart},
-   {id: "d", url: diamond},
-   {id: "e", url: diamond},
-   {id: "f", url: diamond},
-   {id: "g", url: diamond},
-   {id: "h", url: diamond},
-   {id: "i", url: diamond},
-   {id: "j", url: diamond}
+   {id: "b", url: blue},
+   {id: "c", url: multi},
+   {id: "d", url: rainbow},
+   {id: "e", url: green},
+   {id: "f", url: garnet},
+   {id: "g", url: topaz},
+   {id: "h", url: kiss},
+   {id: "i", url: sapphire},
+   {id: "j", url: oval}
 ]
 
 function shuffle (array){
@@ -33,12 +42,12 @@ function shuffle (array){
 
 
 const ImgBtnWrapper = (props) => {
-   console.log(props.clickHandler)
+   // console.log(props.clickHandler)
    return (
    <div>
       {shuffle(imgUrls).map((imgUrl, index) => 
          <ImgBtn 
-         key={imgUrl.ID} 
+         key={imgUrl.id} 
          imgurl={imgUrl.url} 
          onClick={() => props.onClick(imgUrl.id)}
          />
