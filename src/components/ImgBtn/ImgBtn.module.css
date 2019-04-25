@@ -2,5 +2,11 @@
    height: 150px;
    width: 150px;
    border: 1px solid blue;
-   margin: auto;
+   background-size: contain; 
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   margin: 2px;
+
+
 }

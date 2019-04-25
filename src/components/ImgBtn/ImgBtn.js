@@ -8,8 +8,7 @@ const ImgBtn = (props) => (
       onClick={props.onClick}
       style={
          {
-            backgroundImage: `url(${props.imgurl})`,
-            backgroundSize: "contain", margin: "40px"
+            backgroundImage: `url(${props.imgurl})`
          }
       }
    />

@@ -10,6 +10,7 @@ import topaz from "../../images/topaz.png"
 import kiss from "../../images/kiss.png"
 import sapphire from "../../images/sapphire.png"
 import oval from "../../images/oval.png"
+import styles from "./ImgBtnWrapper.module.css"
 
 
 const imgUrls = [
@@ -44,7 +45,9 @@ function shuffle (array){
 const ImgBtnWrapper = (props) => {
    // console.log(props.clickHandler)
    return (
-   <div>
+   <div
+      className={styles.whatever}
+   >
       {shuffle(imgUrls).map((imgUrl, index) => 
          <ImgBtn 
          key={imgUrl.id} 
@@ -58,4 +61,4 @@ const ImgBtnWrapper = (props) => {
 
 
 
-export default ImgBtnWrapper
+export default ImgBtnWrapper;

@@ -1,0 +1,8 @@
+.whatever {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 780px;
+   justify-content: space-evenly;
+   margin: 0 auto;
+}

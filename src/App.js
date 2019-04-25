@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import NavBar from "./components/NavBar/NavBar"
 import ImgBtnWrapper from "./components/ImgBtnWrapper/ImgBtnWrapper"
+import Score from "./components/Score/Score"
+//import { styles } from 'ansi-colors';
+import styles from "./App.css";
 
 
 class App extends React.Component {
@@ -42,7 +45,22 @@ class App extends React.Component {
   render () {
     console.log(this.state)
     return (
-        <ImgBtnWrapper onClick={this.handleClick}/>
+      <div>
+        <NavBar score={this.state.score} highscore={this.state.highscore}/>
+        {
+          (this.state.score>3) ?
+            <div
+              className={styles.popUp}
+            >
+              <h1>You Win!</h1>
+            </div>
+          :
+          null
+        }
+        <ImgBtnWrapper onClick={this.handleClick}
+                      />
+        
+      </div>
     )    
   }
 }
